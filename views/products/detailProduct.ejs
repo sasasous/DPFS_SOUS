@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body>
+   <% products.forEach(product => { %>
+            <div class="bloque">
+               <a href="/id/<%= product.id %>"> <img class="dibujo" src="<%= product.image %>"> </a> 
+               <br>
+               <h4 class="nombre"><%= product.name %></h4>
+               <br>
+               <h5 class="tamaño"> 1280 × 1280 </h5>
+            </div>
+   <% }) %>
+   <%- include('./partials/footer') %>
+  </body>
+</html>
