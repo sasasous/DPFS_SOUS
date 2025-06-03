@@ -1,0 +1,61 @@
+:root {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+a {
+  font-weight: 500;
+  color:#000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FAD899;
+}
+
+/* BODY */
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #FAD899;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #FAD899;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
